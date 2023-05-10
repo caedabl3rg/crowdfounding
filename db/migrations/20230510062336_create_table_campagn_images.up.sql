@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS campaign_images (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    campaign_id BIGINT,
+    file_name VARCHAR(255),
+    is_primary FLOAT,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+)ENGINE=InnoDB;

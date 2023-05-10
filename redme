@@ -1,0 +1,21 @@
+** AWAL BIKIN FOLDER PROJECT **
+
+go mod init crowfunding
+go get -u github.com/gin-gonic/gin
+go get -u gorm.io/gorm
+go get -u gorm.io/driver/mysql
+
+** KONEKSI DATABASE **
+IF CRASH : 
+migrate -path db/migrations -database "mysql://root:@tcp(127.0.0.1:3306)/go_crowfunding" force 20230510051426 (VERSIONS)
+
+TO MIGRATE : 
+migrate -database "mysql://root:@tcp(127.0.0.1:3306)/go_crowfunding" -path db/migrations up
+
+
+** REGISTER USER **
+ALUR BISNIS PROSESS
+- INPUT -> DARI USER
+- HANDLER -> MAPPING INPUT DARI USER [STRUCT INPUT]
+- SERVICE -> MAPPING DARI STRUCT INPUT KE STRUCT USER
+- REPOSITORY -> SAVE STRUCT USER KE DB

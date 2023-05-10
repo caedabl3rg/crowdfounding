@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS transactions (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    campaign_id BIGINT,
+    user_id BIGINT,
+    amount int, 
+    status FLOAT,
+    code VARCHAR(255),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+)ENGINE=InnoDB;
