@@ -28,3 +28,7 @@ ALUR BISNIS PROSESS
 - AMBIL NILAI user_id
 - AMBIL USER DARI DB BERDASARKAN user_id LEWAT SERVICE
 - KITA SET CONTEXT ISINYA USER (sebuah tempat menyimpan suatu nilai)
+
+
+** CAMPAIGN **
+- 
